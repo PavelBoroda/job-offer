@@ -1,0 +1,414 @@
+body {
+  width: 590px;
+  height: 600px;
+  background: url(./форма-восстановлено.jpg) no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+  font-size: 20px;
+  margin-left: -42px;
+  margin-top: 3px;
+  padding: 100px 130px;
+  font-family: 'Open Sans', sans-serif;
+}
+.colorBlue {
+  color: #5693e3;
+}
+/* Первая форма*/
+#mainForm {
+  width: 400px;
+  height: 650px;
+  background-color: white;
+  border-radius: 5px;
+  padding-left: 90px;
+
+}
+#mainForm h3 {
+  font-size: 1.8rem;
+  padding-top: 12px;
+  padding-left: 38px;
+  margin-bottom: 13px;
+}
+#nextButton,#text{
+  text-decoration: none;
+  color: white;
+  z-index: 10;
+  position: relative;
+  top: 6px;
+  left: 38px;
+  font-size: 1.2rem;
+}
+#nextButton_svg{
+  width: 152px;
+  height: 51px;
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  bottom: 45px;
+  fill: #7e8185;
+}
+
+#formButton {
+  width: 160px;
+  height: 51px;
+  margin-top: -5px;
+}
+
+
+#lengthForm{
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    width: 210px;
+    height: 47px;
+    z-index: 6;
+    margin-left: -5px;
+}
+.first {
+  position: relative;
+  top: 12px;
+  right: 5px;
+  font-size: 1.1rem;
+}
+#lengthForm,input[type="text"]{
+  padding-left: 18px;
+  font-size: 1.1rem;
+}
+
+#heightForm{
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  width: 210px;
+  height: 47px;
+  z-index: 6;
+  margin-bottom: 20px;
+  margin-left: -5px;
+}
+.second {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  position: relative;
+  top: 2px;
+  right: 5px;
+
+}
+#heightForm,input[type="text"]{
+  padding-left: 18px;
+  font-size: 1.1rem;
+}
+
+#lengthError{
+  position: absolute;
+  left: 224px;
+  top: 292px;
+  color: #d096a1;
+  font-size: 0.8rem;
+}
+#heightError{
+  position: absolute;
+  left: 224px;
+  top: 397px;
+  color: #d096a1;
+  font-size: 0.8rem;
+}
+#lengthFence{
+  position: relative;
+  left: 8px;
+  bottom: 5px;
+  font-size: 1.1rem;
+}
+#heightFence{
+  position: relative;
+  left: 8px;
+  bottom: 1px;
+  font-size: 1.1rem;
+}
+.third {
+  margin-top: 2px;
+  margin-left: -3px;
+  font-size: 1.1rem;
+}
+.selectBox{
+	position:relative;
+	display:inline-block;
+	cursor:default;
+	text-align:left;
+	line-height:50px;
+	clear:both;
+  color:#7d7d7d;
+	width: 323px;
+  height: 50px;
+  font-size: 1.2rem;
+  margin-top: -15px;
+  right: 5px;
+  top: 2px;
+  border-radius: 5px;
+}
+span.selected{
+  width:273px;
+  height: 50px;
+	text-indent:16px;
+	border:1px solid #7d7d7d;
+	border-right:none;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	background:#fefefe;
+  overflow:hidden;
+}
+span.selectArrow{
+  width:40px;
+  height: 50px;
+	border:1px solid #767676;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	text-align:center;
+	font-size:0.7rem;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	background:	#fefefe;
+  color:#585858;
+}
+
+span.selectArrow,span.selected{
+	position:relative;
+	float:left;
+	height:50px;
+	z-index:50;
+}
+
+.selectOptions{
+	position:absolute;
+	top:50px;
+	left:0;
+	width:311px;
+	border:1px solid #ccc;
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+	overflow:hidden;
+	background:#fefefe;
+	padding-top:2px;
+  display:none;
+  color: #585858;
+  text-indent:16px;
+  z-index:50;
+}
+	
+span.selectOption{
+	display:block;
+	width:80%;
+	line-height:20px;
+	padding:0.2vw;
+}
+
+span.selectOption:hover{
+	color:white;
+	background:#3b81d7;	
+}
+#boxOk{
+  position: absolute;
+  bottom: 15px;
+  left: 325px;
+}
+#lengthOk{
+  position: absolute;
+  top: 255px;
+  left: 555px;
+}
+#heightOk{
+  position: absolute;
+  top: 363px;
+  left: 555px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#summ {
+  color: #a10031;
+}
+#summRub {
+  color: #a10031;
+}
+.four {
+  position: relative;
+  top: 12px;
+  right: 2px;
+  font-size: 1.1rem;
+}
+#checkSubmit {
+  position: relative;
+  top: 1px;
+  right: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(148, 189, 240);
+    border-radius: 4px;
+    background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+    box-shadow: inset 0px 0px 8px 2px rgba(255, 255, 255, 0.004);
+    width: 18px;
+    height: 18px;
+}
+.fifth {
+  font-size: 1.5rem;
+  position: relative;
+  top: 3px;
+}
+/* Вторая форма*/
+
+#validateForm {
+  width: 410px;
+  height: 650px;
+  background-color: white;
+  border-radius: 5px;
+  padding-left: 80px;
+}
+#validateForm p {
+  font-size: 1.2rem;
+}
+#validateForm .validatefirst {
+  position: relative;
+  font-size: 1.9rem;
+  right: 39px;
+  top: 11px;
+  width: 410px;
+}
+
+#nameForm{
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    width: 295px;
+    height: 47px;
+    z-index: 6;
+    margin-top: -20px;
+}
+#nameForm,input[type="text"]{
+  padding-left: 18px;
+  font-size: 1.2rem;
+}
+#nameOk{
+  position: absolute;
+  top: 255px;
+  left: 555px;
+}
+#mailForm{
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  width: 295px;
+  height: 47px;
+  z-index: 6;
+  margin-top: -20px;
+}
+#mailForm,input[type="text"]{
+  padding-left: 18px;
+  font-size: 1.2rem;
+}
+
+#mailOk{
+  position: absolute;
+  top: 358px;
+  left: 555px;
+}
+#phoneForm{
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  width: 295px;
+  height: 47px;
+  z-index: 6;
+  margin-top: -20px;
+}
+#phoneForm,input[type="text"]{
+  padding-left: 18px;
+  font-size: 1.2rem;
+}
+
+#phoneOk{
+  position: absolute;
+  top: 465px;
+  left: 555px;
+}
+#secondButton {
+  position: relative;
+  bottom: 5px;
+    border-radius: 8px;
+    width: 235px;
+    height: 55px;
+    z-index: 106;
+    margin-left: 40px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #5f6267;
+}
+#validateMessage {
+  width: 325px;
+  font-size: 1.2rem;
+} 
+#validateBack{
+  position: absolute;
+  top: 75px;
+  left: 145px;
+  font-size: 0.8rem;
+  color: white;
+  cursor: pointer;
+}
+strong {
+  color: #a10031;
+}
+
+/* третья форма */
+#popUp {
+  width: 490px;
+  height: 345px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.firstP p {
+  width: 100%;
+  height: 100px;
+  padding: 0px;
+  margin-top: 41px;
+  margin-left: -2px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.secondP p {
+  text-align: center;
+  font-size: 1.25rem;
+  width: 70%;
+  position: relative;
+  left: 72.5px;
+  bottom: 40px;
+}
+.secondP span{
+  color: #3e78c1;
+}
+.thirdP p {
+  text-align: center;
+  font-size: 1.25rem;
+  width: 80%;
+  position: relative;
+  left: 50px;
+  bottom: 65px;
+}
+.thirdP span {
+  color: #3e78c1;
+}
+#popUp strong {
+  color: #3e78c1;
+}
+#popUp u {
+  position: absolute;
+  top: 83px;
+  left: 573px;
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+}

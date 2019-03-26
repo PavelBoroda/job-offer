@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="./test1.css">
+  <title>Test page</title>
+</head>
+<body>
+  <div id="mainForm">
+    <h3>Заказать забор</h3>
+    <p class="first">Длина забора</p>
+    <div class="numberForm">
+      <input type="number", id="lengthForm", min="1", max="9999", placeholder="0", step="0.1">
+      <span id="lengthError">Неверно Заполнено поле</span>
+      <span id="lengthFence">метров</span>
+      <svg  width="25px" height="22px" id="lengthOk"><defs><filter id="Filter_0">    <feOffset in="SourceAlpha" dx="0" dy="1" />
+      <feGaussianBlur result="blurOut" stdDeviation="2" />
+      <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+      <feComposite operator="out" in="floodOut" in2="blurOut" result="compOut" />
+      <feComposite operator="in" in="compOut" in2="SourceAlpha" />
+      <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+      <feBlend mode="multiply" in2="SourceGraphic" />
+    </filter>
+    <linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+      <stop offset="0%" stop-color="rgb(47,146,28)" stop-opacity="1" />
+      <stop offset="100%" stop-color="rgb(120,177,45)" stop-opacity="1" />
+    </linearGradient>
+    </defs>
+<g filter="url(#Filter_0)">
+<path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+ d="M20.035,5.086 L17.914,2.964 L9.000,11.878 L6.086,8.964 L3.965,11.086 L8.914,16.036 L9.000,15.949 L9.086,16.035 L20.035,5.086 Z"/>
+</g>
+<path fill="url(#PSgrad_0)"
+ d="M20.035,5.086 L17.914,2.964 L9.000,11.878 L6.086,8.964 L3.965,11.086 L8.914,16.036 L9.000,15.949 L9.086,16.035 L20.035,5.086 Z"/>
+</svg>
+    </div>
+    <p class="second">Высота забора</p>
+    <div class="numberForm">
+      <input type="number", id="heightForm", min="1", max="9999", placeholder="0", step="0.1">
+      <span id="heightError">Неверно Заполнено поле</span>
+      <span id="heightFence">метров</span>
+      <svg  width="25px" height="22px" id="heightOk"><defs><filter id="Filter_5">    <feOffset in="SourceAlpha" dx="0" dy="1" />
+        <feGaussianBlur result="blurOut" stdDeviation="2" />
+        <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+        <feComposite operator="out" in="floodOut" in2="blurOut" result="compOut" />
+        <feComposite operator="in" in="compOut" in2="SourceAlpha" />
+        <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+        <feBlend mode="multiply" in2="SourceGraphic" />
+      </filter>
+      <linearGradient id="PSgrad_5" x1="0%" x2="0%" y1="100%" y2="0%">
+        <stop offset="0%" stop-color="rgb(47,146,28)" stop-opacity="1" />
+        <stop offset="100%" stop-color="rgb(120,177,45)" stop-opacity="1" />
+      </linearGradient>
+      </defs>
+  <g filter="url(#Filter_5)">
+  <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+   d="M20.035,5.086 L17.914,2.964 L9.000,11.878 L6.086,8.964 L3.965,11.086 L8.914,16.036 L9.000,15.949 L9.086,16.035 L20.035,5.086 Z"/>
+  </g>
+  <path fill="url(#PSgrad_5)"
+   d="M20.035,5.086 L17.914,2.964 L9.000,11.878 L6.086,8.964 L3.965,11.086 L8.914,16.036 L9.000,15.949 L9.086,16.035 L20.035,5.086 Z"/>
+  </svg>
+    </div>
+    <p class="third">Материал забора</p>
+        <div class='selectBox' id="selectSumm" >
+            <span class='selected' id="seles" ></span>
+            <span class='selectArrow'>&#9660</span>
+            <svg  width="25px" height="22px" id="boxOk"><defs><filter id="Filter_0">    <feOffset in="SourceAlpha" dx="0" dy="1" />
+              <feGaussianBlur result="blurOut" stdDeviation="2" />
+              <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+              <feComposite operator="out" in="floodOut" in2="blurOut" result="compOut" />
+              <feComposite operator="in" in="compOut" in2="SourceAlpha" />
+              <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+              <feBlend mode="multiply" in2="SourceGraphic" />
+            </filter>
+            <linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+              <stop offset="0%" stop-color="rgb(47,146,28)" stop-opacity="1" />
+              <stop offset="100%" stop-color="rgb(120,177,45)" stop-opacity="1" />
+            </linearGradient>
+            </defs>
+        <g filter="url(#Filter_0)">
+        <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+         d="M20.035,5.086 L17.914,2.964 L9.000,11.878 L6.086,8.964 L3.965,11.086 L8.914,16.036 L9.000,15.949 L9.086,16.035 L20.035,5.086 Z"/>
+        </g>
+        <path fill="url(#PSgrad_0)"
+         d="M20.035,5.086 L17.914,2.964 L9.000,11.878 L6.086,8.964 L3.965,11.086 L8.914,16.036 L9.000,15.949 L9.086,16.035 L20.035,5.086 Z"/>
+        </svg>
+            <div class="selectOptions" id="selesTop" >
+              <span class="selectOption" value="0">Выберите материал</span>
+              <span class="selectOption" value="400">Профнастил 400 ₽ за м²</span>
+              <span class="selectOption" value="500">Модули 500 ₽ за м²</span>
+              <span class="selectOption" value="700">Бетон 700 ₽ за м²</span>
+              <span class="selectOption" value="200">Сетка 200 ₽ за м²</span>
+            </div>
+    <p class="four"><input type="checkbox", id="checkSubmit", value='200'> Нужен монтаж</p>
+    <p class="fifth">Сумма заказа:  <span id="summ">0</span><span id="summRub"> ₽</span></p>
+    <div id="formButton">
+    <a href="#" id="nextButton">ДАЛЕЕ </a>
+    <svg  width="152px" height="51px" id="nextButton_svg"><path fill-rule="evenodd" d="M4.488,-0.005 L126.684,-0.005 L151.978,25.500 L126.684,51.003 L4.488,51.003 C2.015,51.003 0.010,49.097 0.010,46.746 L0.010,4.252 C0.010,1.901 2.015,-0.005 4.488,-0.005 Z"/>
+    </svg>
+  </div>
+  </div>
+  </div>
+  <div id="validateForm">
+    <p class="validatefirst">Пожалуйста, представьтесь</p>
+    <p>Ваше имя</p>
+    <div class="nameForm">
+      <input type="text", id="nameForm" pattern="^[а-яА-ЯеЁa-zA-Z]+$" required>
+      <svg  width="25px" height="22px" id="nameOk" ><defs><filter id="Filter_2"><feOffset in="SourceAlpha" dx="0" dy="1" />
+      <feGaussianBlur result="blurOut" stdDeviation="2" />
+      <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+      <feComposite operator="out" in="floodOut" in2="blurOut" result="compOut" />
+      <feComposite operator="in" in="compOut" in2="SourceAlpha" />
+      <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+      <feBlend mode="multiply" in2="SourceGraphic" />
+    </filter>
+    <linearGradient id="PSgrad_2" x1="0%" x2="0%" y1="100%" y2="0%">
+      <stop offset="0%" stop-color="rgb(47,146,28)" stop-opacity="1" />
+      <stop offset="100%" stop-color="rgb(120,177,45)" stop-opacity="1" />
+    </linearGradient>
+    </defs>
+<g filter="url(#Filter_2)">
+<path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+ d="M20.035,5.086 L17.914,2.964 L9.000,11.878 L6.086,8.964 L3.965,11.086 L8.914,16.036 L9.000,15.949 L9.086,16.035 L20.035,5.086 Z"/>
+</g>
+<path fill="url(#PSgrad_2)"
+ d="M20.035,5.086 L17.914,2.964 L9.000,11.878 L6.086,8.964 L3.965,11.086 L8.914,16.036 L9.000,15.949 L9.086,16.035 L20.035,5.086 Z"/>
+</svg>
+    </div>
+    <p>Электронная почта</p>
+    <div class="mailForm">
+      <input type="email", id="mailForm">
+      <svg  width="25px" height="22px" id="mailOk"><defs><filter id="Filter_3">    <feOffset in="SourceAlpha" dx="0" dy="1" />
+        <feGaussianBlur result="blurOut" stdDeviation="2" />
+        <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+        <feComposite operator="out" in="floodOut" in2="blurOut" result="compOut" />
+        <feComposite operator="in" in="compOut" in2="SourceAlpha" />
+        <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+        <feBlend mode="multiply" in2="SourceGraphic" />
+      </filter>
+      <linearGradient id="PSgrad_3" x1="0%" x2="0%" y1="100%" y2="0%">
+        <stop offset="0%" stop-color="rgb(47,146,28)" stop-opacity="1" />
+        <stop offset="100%" stop-color="rgb(120,177,45)" stop-opacity="1" />
+      </linearGradient>
+      </defs>
+  <g filter="url(#Filter_3)">
+  <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+   d="M20.035,5.086 L17.914,2.964 L9.000,11.878 L6.086,8.964 L3.965,11.086 L8.914,16.036 L9.000,15.949 L9.086,16.035 L20.035,5.086 Z"/>
+  </g>
+  <path fill="url(#PSgrad_3)"
+   d="M20.035,5.086 L17.914,2.964 L9.000,11.878 L6.086,8.964 L3.965,11.086 L8.914,16.036 L9.000,15.949 L9.086,16.035 L20.035,5.086 Z"/>
+  </svg>
+    </div>
+    <p>Телефон</p>
+    <div class="phoneForm">
+      <input type="text", id="phoneForm" placeholder="+7(999)999-99-99">
+      <svg  width="25px" height="22px" id="phoneOk"><defs><filter id="Filter_4">    <feOffset in="SourceAlpha" dx="0" dy="1" />
+        <feGaussianBlur result="blurOut" stdDeviation="2" />
+        <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+        <feComposite operator="out" in="floodOut" in2="blurOut" result="compOut" />
+        <feComposite operator="in" in="compOut" in2="SourceAlpha" />
+        <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+        <feBlend mode="multiply" in2="SourceGraphic" />
+      </filter>
+      <linearGradient id="PSgrad_4" x1="0%" x2="0%" y1="100%" y2="0%">
+        <stop offset="0%" stop-color="rgb(47,146,28)" stop-opacity="1" />
+        <stop offset="100%" stop-color="rgb(120,177,45)" stop-opacity="1" />
+      </linearGradient>
+      </defs>
+  <g filter="url(#Filter_4)">
+  <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+   d="M20.035,5.086 L17.914,2.964 L9.000,11.878 L6.086,8.964 L3.965,11.086 L8.914,16.036 L9.000,15.949 L9.086,16.035 L20.035,5.086 Z"/>
+  </g>
+  <path fill="url(#PSgrad_4)"
+   d="M20.035,5.086 L17.914,2.964 L9.000,11.878 L6.086,8.964 L3.965,11.086 L8.914,16.036 L9.000,15.949 L9.086,16.035 L20.035,5.086 Z"/>
+  </svg>
+    </div>
+    <p id="validateMessage">Вы укомплектовали забор <span class='colorBlue'>длинной <span id="validateLength">6</span> <span id="validateLengthText">метров</span></span> и <span class='colorBlue'>высотой <span id="validateHeight">2</span> <span id="validateHeightText">метра</span></span> из материала <span id="validateMaterial" class="colorBlue">профнастил</span> на сумму <strong id="validateSumm">0</strong><strong> ₽</strong></p>
+    <input type="submit" id="secondButton" value='ОТПРАВИТЬ'>
+    <div id="validateBack"> ← <u>Вернуться</u></div>
+</div>
+</div>
+<div id="popUp">
+  <div class="firstP">
+  <p id="popH3"><span id='popUpName'>Татьяна</span>,<br> заказ <strong>№ 8675</strong> сформирован!</p>
+</div>
+<div class="secondP">
+  <p>Мы повторили его комплектацию на почту <span id='popUpMail'>mail@mail.ru</span></p>
+</div>
+<div class="thirdP">
+  <p>В ближайшее время наш специалист <br> свяжется с вами по телефону <br>  
+<span id='popUpPhone'>+7 (917) 111-22-33</span></p>
+</div>
+<u id="popUpClose">Закрыть</u>
+</div>
+</body>
+<script src="./jquery-3.3.1.min.js"></script>
+<script src="./jquery.maskedinput.min.js"></script>
+<script src="./smtp.js"></script>
+<script src="./test1.js"></script>
+</html>
