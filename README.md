@@ -1,1 +1,1 @@
-https://pavelboroda.github.i/Form/index.html
+https://pavelboroda.github.io/Form/index.html
